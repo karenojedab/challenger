@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <!--Encabezado + logo-->
+    <header class="encabezado">
+        <div class="encabezado_logo">          
+            <img class="encabezado_logo_alura" src="./assets/logoalura.svg" alt="Logo Alura">
+            <span class="encabezado_espacio"></span>
+            <img class="encabezado_logo_oracle" src="./assets/logoone.svg" alt="Logo ONE">
+        </div>              
+        <h1 class="encabezado_titulo">Encriptador de Texto</h1>
+    </header>
+
+    <main class="contenido">
+        <section class="contenido_entrada">
+                <textarea 
+                    class="contenido_entrada_texto" 
+                    name="texto" 
+                    id="contenidoTexto" 
+                    cols="30" 
+                    rows="10" 
+                    placeholder="Ingrese el texto aquí..." textarea>
+                </textarea>
+
+                <div class="contenido_entrada_alerta" id="condicion">
+                    <div class="contenido_entrada_alerta_icono">
+                        <img src="/assets/icono!.svg" alt="icono de alerta">
+                        <span class="contenido_entrada_alerta_texto">
+                            Solo letras minúsculas, sin acentos ni caracteres especiales.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="contenido_entrada_boton">
+                    <button 
+                        class="contenido_entrada_boton_encriptar" 
+                        id= "botonEncriptar" 
+                        type = "button">Encriptar</button>
+                    
+                    <button 
+                        class="contenido_entrada_boton_desencriptar" 
+                        id= "botonDesencriptar" 
+                        type = "button">Desencriptar</button>
+                </div>
+        </section>
+       
+        <!--Mostrar texto encriptado y/o desencriptado-->
+        <section class="contenido_resultado">
+            <div class="contenido_resultado_" id="campoCondicion">
+                <img src="/assets/imagen.svg" alt="imagen_de_espera" class="contenido_resultado_imagen">
+                    <h3 class="contenido_resultado_texto1">Ningún mensaje fue encontrado.</h3>
+                    <p class="contenido_resultado_texto2">Ingresa el texto que desees encriptar o desencriptar.</p> 
+            </div>
+
+            <div class="contenido_resultado_visto" id="campoVisto">
+                <p class="contenido_resultado_visto_texto" id="campoResultado" type="text"></p>
+                <button class="contenido_resultado_visto_boton" id="botonCopiar" type="button">Copiar</button>
+            </div> 
+
+        </section>
+    </main>
+
+    <!--Pie de página-->
+    <footer class="footer">
+        <div class="footer_">
+            <h5 class="footer_subtitulo">Accede a mis redes:</h5>
+            <div class="footer_redes">
+                <a class="footer_redes_link" href="https://github.com/karenojedab"><img src="./assets/vectorgithub.svg"></a>            
+                <a class="footer_redes_link" href="www.linkedin.com/in/karen-ojedab"><img src="./assets/vectorlinkedin.svg"></a>           
+                <a class="footer_redes_link" href="https://www.instagram.com/nerakvob/"><img src="./assets/vectorinstagram.svg"></a> 
+            </div>          
+        </div>
+        
+        <p class="footer_autor">Copyright©2024 | Coded by Karen Ojeda</p>
+    </footer>
+    <script src="./app.js" defer></script>
+</body>
+</html>        
+    
+
+    
